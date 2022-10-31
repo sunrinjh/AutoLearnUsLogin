@@ -1,0 +1,17 @@
+{
+    "name": "Leargin",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "*://www.learnus.org/*"
+          ],
+        "js": ["content-script.js"]
+
+      }
+    ]
+  }
